@@ -40,7 +40,7 @@ main {
 }
 
 .main1 {
-    background-color: gray;
+    background-color: lightgray;
     grid-column: 1/3;
 }
 
