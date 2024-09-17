@@ -1,15 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Dennis Almendarez</title>
+    <meta name="description"
+        content="Course assignment portal of Dennis Almendarez for WDD 131 - Dynamic Web Fundamentals">
+    <meta name="author" content="Dennis Almendarez">
+    <meta property="og:title" content="Dennis Almendarez WDD 131">
+    <meta property="og:type" content="Home Page">
+    <meta property="og:image"
+        content="https://www.churchofjesuschrist.org/imgs/8992d85669af96dd61ecf98e249a7da21bd7f7b0/full/320%2C/0/default">
+    <meta property="og:url" content="https://dennisalmendarez.github.io/wdd131/">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="icon" href="images/favicon.ico">
 </head>
-
 <body>
-    <a href="week01/basic-layout.html">Layout</a>
-    <a href="week01/basic-layout.html">New</a>
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - Dennis Almendarez</h1>
+        <div id="mode">
+            🕶️
+        </div>
+    </header>
+    <nav class="navigation">
+        <a href="https://www.linkedin.com/in/dennis-almendarez-3a2079268/">LinkedIn</a>
+        <a href="https://byui.instructure.com/">I-Learn</a>
+        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/5?lang=eng&id=p33#p33">Scripture</a>
+        <a href="index.html">Final Project</a>
+    </nav>
+    <main>
+        <div class="card-container">
+            <section class="card">
+                <h2>About Me</h2>
+                <img class="me" src="images/me.webp" alt="Dennis Almendarez">
+                <p>I'm a sci-fi movie enthusiast and anime fan who enjoys spending time fishing and playing mini-golf 
+                    now and then. I'm passionate about learning new things and love diving into novels whenever I can. Originally 
+                    from Honduras, I now live in the USA, working as a framer. In my spare time, I like to write short stories to fuel my creativity.
+                </p>
+                <h3>Honduras</h3>
+                <img class="flag" src="images/honduras.webp" alt="Honduras Flag">
+                <p>Honduras is a vibrant Central American country with a population of around 10 million. 
+                    Its capital is Tegucigalpa, and Spanish is the official language. The country boasts diverse geography, 
+                    with mountains, rainforests, and coastlines on both the Caribbean Sea and the Pacific Ocean. 
+                    Honduran culture is a mix of indigenous, Spanish, and African influences, reflected in its music, 
+                    dance, and festivals.</p>
+            </section>
+            <section class="card">
+                <h2>Information</h2>
+                <ul>
+                    <li>First Week</li>
+                    <li>Second Week</li>
+                </ul>
+                <div class="numvisits">
+                    <p><span class="label">Number of Visits: </span>
+                    <span class="visits"></span></p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <span id="year"></span>
+        <p id="lastmodified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    <script src="scripts/visits.js"></script>
 </body>
-
 </html>

@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation {
+    background-color: #333;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.navigation a {
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation a:hover {
+    background-color: #bbb;
+    color: #333;
+    font-weight: 700;
+}
+
+.visits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.visits p {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+span {
+    padding-left: 10px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #3c93bc;
+}
+
+#mode {
+    position: absolute;
+    top: 0.7rem;
+    right: 5rem;
+    font-size: 3rem;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+main {
+    margin: 0 auto;
+}
+
+.card-container {
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: white;
+}
+
+
+.card h2 {
+    text-align: center;
+    background-color: rgb(57, 100, 135);
+    color: #ffffff;
+    padding: 10px 20px;
+    margin: -20px -20px 20px -20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.me {
+    width: 120px;
+    border-radius: 100px;
+    float: right;
+}
+
+.flag {
+    width: 120px;
+    float: left;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 22px;
+    border-color: black;
+    border-style: solid;
+}
+
+h1 {
+    text-align: center;
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+h3 {
+    text-decoration: underline;
+    text-align: center;
+}
+
+.label {
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    position: absolute;
+}
+
+.numvisits {
+    position: relative;
+    padding-top: 200px;
+}
+
+footer {
+    align-items: center;
+    justify-content: center;
+    background-color: #23afc8;
+    text-align: center;
+    border-color: #3c93bc;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
