@@ -62,6 +62,10 @@ nav ul li a:hover {
     color: black;
 }
 
+figure {
+    display: none;
+}
+
 .header-container {
     background-color: #559fd4;
     display: flex;
