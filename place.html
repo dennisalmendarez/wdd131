@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Dennis Almendarez</title>
+    <meta name="description" content="Course assignment portal of Dennis Almendarez for WDD 131 - Dynamic Web Fundamentals">
+    <meta name="author" content="Dennis Almendarez">
+    <meta property="og:title" content="WDD 131 - Dynamic Web Fundamentals - Dennis Almendarez">
+    <meta property="og:type" content="Home Page">
+    <meta property="og:image" content="https://www.churchofjesuschrist.org/imgs/8992d85669af96dd61ecf98e249a7da21bd7f7b0/full/320%2C/0/default">
+    <meta property="og:url" content="https://dennisalmendarez.github.io/wdd131/">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>    
+            <h1>Japan</h1>
+    </header>
+    <main>
+        <picture>
+            <source srcset="images/japan-low.jpg" media="(max-width: 500px)">
+            <img class="img1" src="images/japan-medium.jpg" alt="Japan" width="1000" height="500" loading="lazy">
+        </picture>
+        <picture>
+            <source srcset="images/japan-low.webp" media="(max-width: 500px)">
+            <img class="img2" src="images/japan-medium.webp" alt="Japan" width="1000" height="500" loading="lazy">
+        </picture>
+        <section class="card">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Area:</strong> 377,975 km²</li>
+                <li><strong>Population:</strong> Approximately 124.6 million (as of 2023)</li>
+                <li><strong>Capital:</strong> Tokyo</li>
+                <li><strong>Languages:</strong> Japanese (official language)</li>
+                <li><strong>Currency:</strong> Japanese Yen (JPY, ¥)</li>
+                <li><strong>Time Zone:</strong> Japan Standard Time (JST), UTC+9</li>
+                <li><strong>Calling Code:</strong> +81</li>
+                <li><strong>Internet TLD:</strong> .jp</li>
+            </ul>
+        </section>
+        <section class="card">
+                <h2 id="city-name"></h2>
+                <img id="weather-icon" src="" alt="Weather icon">
+                <ul>
+                    <li><strong>Current Temp:</strong> <span id="current-temp"></span></li>
+                    <li><strong>Condition:</strong> <span id="condition"></span></li>
+                    <li><strong>Wind Speed:</strong> <span id="wind-speed"></span></li>
+                    <li><strong>Wind Chill:</strong> <span id="wind-chill"></span>&deg;F</li>
+                </ul>
+        </section>
+    </main>
+    <footer>
+        <span id="year"></span>
+        <p id="lastmodified"></p>
+    </footer>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/weather.js"> defer</script>
+</body>
+</html>
