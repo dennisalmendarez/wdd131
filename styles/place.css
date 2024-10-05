@@ -33,9 +33,12 @@ main {
 
 header {
     width: 100%;
-    background-color: #FCD1D7;
     padding: 20px;
     text-align: center;
+    background-color: #c0c2bb;
+    border-radius: 40px;
+    text-align: center;
+    margin: 10px auto;
 }
 
 .box {
@@ -97,7 +100,15 @@ footer {
     display: none;
 }
 
+header h1::after {
+    content: " An Adventured Awaits";
+    font-size: 0.6em;
+    color: #0f06ad;
+    display: block;
+}
+
 @media (min-width: 700px) {
+
 
     body {
         margin: 0;
@@ -107,6 +118,14 @@ footer {
         position: relative;
     }
 
+    .icon1 {
+        display: none;
+    }
+
+    #weather-icon {
+        display: block;
+    }
+    
     main {
         position: relative;
         margin: 0 auto;
