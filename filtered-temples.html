@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temples Album - WDD 131 - Dynamic Web Fundamentals - Dennis Almendarez</title>
+    <meta name="description" content="Temples Album - Dynamic Web Fundamentals">
+    <meta name="author" content="Dennis Almendarez">
+    <meta property="og:title" content="Temples Album - WDD 131 - Dynamic Web Fundamentals - Dennis Almendarez">
+    <meta property="og:type" content="Home Page">
+    <meta property="og:image" content="https://dennisalmendarez.github.io/wdd131/images/temples.png">
+    <meta property="og:url" content="https://dennisalmendarez.github.io/wdd131/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Temple Album</h1>
+            <nav>
+                <ul id="menu">
+                    <li><a id="toggleMenu">&equiv;</a></li>
+                    <li><a href="javascript:void(0)" class="menu-item" data-filter="all">Home</a></li>
+                    <li><a href="javascript:void(0)" class="menu-item" data-filter="old">Old</a></li>
+                    <li><a href="javascript:void(0)" class="menu-item" data-filter="new">New</a></li>
+                    <li><a href="javascript:void(0)" class="menu-item" data-filter="large">Large</a></li>
+                    <li><a href="javascript:void(0)" class="menu-item" data-filter="small">Small</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="gridly">
+        <h2>Home</h2>
+        <div class="filter">
+            <select id="filtered" title="Choose a data filter.">
+                <option value="" disabled selected>Filter Temples</option>
+                <option value="utah">Utah</option>
+                <option value="notutah">Outside of Utah</option>
+                <option value="older">Built Before 1950</option>
+                <option value="all">No Filter</option>
+            </select>
+        </div>
+        <div id="temples"></div>
+    </main>
+    <footer>
+        <span id="year"></span>
+        <p id="lastmodified"></p>
+    </footer>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/filtered-temples.js" defer></script>
+    <script src="scripts/hamburger-menu.js" defer></script>
+</body>
+
+</html>
