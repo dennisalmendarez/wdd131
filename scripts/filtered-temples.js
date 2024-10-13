@@ -1,7 +1,6 @@
 const templesElement = document.getElementById("temples");
 let templeList = [];
 
-/* async displayTemples Function */
 const displayTemples = (temples) => {
     templesElement.innerHTML = '';
     temples.forEach(temple => {
@@ -34,19 +33,17 @@ const displayTemples = (temples) => {
     });
 };
 
-/* async getTemples Function using fetch() */
 const getTemples = async () => {
     const response = await fetch("https://byui-cse.github.io/cse121b-ww-course/resources/temples.json");
     templeList = await response.json();
     displayTemples(templeList);
 };
 
-/* reset Function */
 const reset = () => {
     templesElement.innerHTML = "";
 };
 
-/* filterTemples Function */
+
 const filterTemples = (temples) => {
     reset();
     const filter = document.querySelector("#filtered").value;
@@ -67,7 +64,6 @@ const filterTemples = (temples) => {
     }
 };
 
-/* Event Listeners */
 document.querySelector("#filtered").addEventListener("change", () => { 
     filterTemples(templeList); 
 });
@@ -79,7 +75,6 @@ document.querySelectorAll(".menu-item").forEach(item => {
     });
 });
 
-/* filterTemplesByNav Function */
 function filterTemplesByNav(temples, filter) {
     reset();
     switch (filter) {
@@ -102,5 +97,5 @@ function filterTemplesByNav(temples, filter) {
     }
 }
 
-/* Fetch temples on page load */
+
 getTemples();

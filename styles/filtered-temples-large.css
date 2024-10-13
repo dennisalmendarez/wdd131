@@ -1,16 +1,16 @@
 @media only screen and (min-width: 35.7em) {
     nav ul {
-        flex-direction: row; /* Show items inline on larger screens */
-        display: flex; /* Initially show items */
+        flex-direction: row;
+        display: flex;
         position: relative;
         margin-top: 5px;
     }
 
     nav ul li:first-child {
-        display: none; /* Hide the toggle button */
+        display: none;
     }
 
     nav ul li {
-        display: block; /* Ensure menu items are displayed */
+        display: block;
     }
 }
