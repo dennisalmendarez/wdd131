@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #cfcfcf;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #003366;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    background-color: #033466bf;
+    text-align: center;
+    color: white;
+    border-radius: 30px;
+    margin: 20px;
+    max-width: 400px;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+select, 
+input[type="date"],
+input[type="text"], 
+textarea, 
+input[type="submit"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+}
+
+textarea {
+    height: 100px;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.rating input:checked + label {
+    color: gold;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+.button {
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: aquamarine;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 5px 0;
+}
