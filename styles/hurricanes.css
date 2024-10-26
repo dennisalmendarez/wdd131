@@ -1,7 +1,5 @@
 * {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 :root {
@@ -64,7 +62,7 @@ nav ul {
 }
 
 .intro img {
-    width: 100%;
+    width: 50%;
     height: 250px;
 }
 
@@ -223,7 +221,7 @@ h3 {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    padding-bottom: 50px;
+    padding-bottom: 90px;
 }
 
 .circle-box {
@@ -263,8 +261,8 @@ caption {
 }
 
 .hurricaneT {
-    padding-bottom: 16%;
-    padding-top: 10%;
+    padding-bottom: 8%;
+    padding-top: 5%;
 }
 
 /* form */
