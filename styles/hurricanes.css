@@ -11,7 +11,7 @@
     --accent2-color: #F07167;
     --accent3-color: #FED9B7;
     --heading-font: "Roboto", serif;
-    --paragraph-font: Tenor Sans, serif, Helvetica;
+    --paragraph-font: "Tenor Sans", serif, Helvetica, sans-serif;
 }
 
 body {
