@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hurricane Formation - WDD 131 - Dynamic Web Fundamentals - Dennis Almendarez</title>
+    <meta name="description" content="Learn about hurricane formation, categories, and preparedness in this comprehensive guide.">
+    <meta name="author" content="Dennis Almendarez">
+    <meta property="og:title" content="Hurricane Formation Study Guide">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/hurricane-earth-satellite-medium.webp">
+    <meta property="og:url" content="https://yourwebsite.com/hurricanes.html">
+    <link rel="icon" href="images/favicon2.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/hurricanes.css">
+    <link rel="stylesheet" href="styles/hurricanes-small.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="hurricanes.html"><img src="images/logo.png" alt="Logo" width="50"></a>
+        </div>
+        <button id="toggleMenu" aria-label="Menu">
+            &#9776;
+        </button>
+        <nav id="menu">
+            <ul>
+                <li><a href="category.html">Categories</a></li>
+                <li><a href="preparedness.html">Preparedness</a></li>
+                <li><a href="past-hurricanes">Past Hurricanes</a></li>
+                <li><a href="Enroll.html">Enroll</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Understanding Hurricanes: Formation, Categories, and Preparedness</h1>
+        <section class="intro">
+            <h2>Hurricanes are among the most powerful and destructive natural phenomena on Earth. </h2>
+            <picture>
+                <source srcset="images/hurricane-earth-satellite-low.webp" media="(max-width: 500px)">
+                <img src="images/hurricane-earth-satellite-medium.webp" alt="Satellite View" width="1000" height="500" loading="lazy">
+            </picture>
+            <p>
+                These massive storms, also known as tropical cyclones in other parts of the world, are capable of causing widespread devastation to coastal regions, 
+                uprooting communities, and leaving behind a trail of damage that can take years to repair. Understanding how hurricanes form, the categories that define their intensity, 
+                and the importance of preparedness and safety measures can significantly reduce the risk of casualties and minimize damage. 
+                This essay explores these key elements of hurricanes and emphasizes the necessity of preparedness in the face of these storms.
+            </p>
+        </section>
+
+        <div class="text">
+            <p>You will find resources for help on the botton of this page.</p>
+        </div>
+
+        <section class="content">
+            <div class="left-content">
+                <h2>Hurricanes begin as tropical disturbances in warm ocean waters near the equator.</h2>
+                <picture>
+                    <source srcset="images/cyclone-map-low.webp" media="(max-width: 500px)">
+                    <img src="images/cyclone-map-medium.webp" alt="Map of Tropical Storms" width="1000" height="500" loading="lazy">
+                </picture>
+                <p> 
+                    The process of hurricane formation is complex and involves several steps. 
+                    First, the surface of the ocean must reach a temperature of at least 80 degrees Fahrenheit (27 degrees Celsius). 
+                    This warm water serves as the fuel for the hurricane. As the water evaporates, it rises into the atmosphere as warm, moist air. 
+                    This air cools as it ascends, causing condensation to occur and forming clouds.
+                </p>
+            </div>
+
+            <div class="middle-content">
+                <h2>The second essential factor in hurricane formation is wind.</h2>
+                <picture>
+                    <source srcset="images/hurricane-diagram-low.webp" media="(max-width: 500px)">
+                    <img src="images/hurricane-diagram-medium.webp" alt="Hurricane Diagram" width="1000" height="500" loading="lazy">
+                </picture>
+                <p>
+                    Winds blowing across the ocean's surface cause more evaporation, further fueling the storm. 
+                    In regions like the Atlantic Ocean, hurricanes often start when winds blow westward from Africa, gathering strength as they move across warm waters. 
+                    The rising, moist air forms massive cumulonimbus clouds, which are common in thunderstorms, and as the winds spin faster, they begin to circulate around a center. 
+                    This spinning motion intensifies, and when wind speeds reach 74 miles per hour, the storm is officially classified as a hurricane.
+                </p>
+            </div>
+
+            <div class="right-content">
+                <h2>The structure of a hurricane is characterized by the calm center known as the “eye”.</h2>
+                <picture>
+                    <source srcset="images/eye-wall-low.webp" media="(max-width: 500px)">
+                    <img src="images/eye-wall-medium.webp" alt="Hurricane Diagram" width="1000" height="500" loading="lazy">
+                </picture>
+                <p>
+                    Surrounded by the most intense winds and rain in the “eye wall.” 
+                    This organization allows hurricanes to grow larger and more dangerous as they continue to move across warm ocean waters. 
+                    As long as a hurricane remains over warm water, it can sustain or even intensify its power.
+                </p>
+            </div>
+        </section>
+
+        <div class="button">
+            <a href="category.html">Categories</a>
+            <a href="Preparedness.html">Preparedness</a>
+        </div>
+    </main>
+    <footer>
+        <div class="resources">
+            <a href="https://www.nhc.noaa.gov" target="_blank">National Hurricane Center (NHC)</a>
+            <a href="https://www.fema.gov" target="_blank">FEMA - Disaster Preparedness</a>
+            <a href="https://www.redcross.org" target="_blank">American Red Cross</a>
+            <a href="https://www.globalgiving.org" target="_blank">GlobalGiving</a>
+        </div>
+        <span id="year"></span>
+        <p id="lastmodified"></p>
+    </footer>
+
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/hamburger-menu.js" defer></script>
+</body>
+</html>

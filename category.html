@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hurricane Categories - WDD 131 - Dynamic Web Fundamentals - Dennis Almendarez</title>
+    <meta name="description" content="Explore hurricane categories and understand their impact using the Saffir-Simpson Hurricane Wind Scale.">
+    <meta name="author" content="Dennis Almendarez">
+    <meta property="og:title" content="Hurricane Categories">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/category.webp">
+    <meta property="og:url" content="https://yourwebsite.com/categories.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon2.ico">
+    <link rel="stylesheet" href="styles/hurricanes.css">
+    <link rel="stylesheet" href="styles/hurricanes-small.css">
+</head>
+<body class="body2">
+    <header>
+        <div class="logo">
+            <a href="hurricanes.html"><img src="images/logo.png" alt="Logo" width="50"></a>
+        </div>
+        <button id="toggleMenu" aria-label="Menu">
+            &#9776;
+        </button>
+        <nav id="menu">
+            <ul>
+                <li><a href="category.html">Categories</a></li>
+                <li><a href="preparedness.html">Preparedness</a></li>
+                <li><a href="past-hurricanes">Past Hurricanes</a></li>
+                <li><a href="Enroll.html">Enroll</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="h-category">
+        <h1>Hurricane Categories</h1>
+        <p class="text2">
+            Hurricanes are categorized based on their wind speeds using the Saffir-Simpson Hurricane Wind Scale.
+            This scale divides hurricanes into five categories, with Category 1 being the least severe and Category 5 representing catastrophic damage.</p>
+        <div id="table">
+        </div>
+        <p class="text2">
+            Each category represents an increasing level of danger, making it critical to monitor a storm’s category and take appropriate precautions, especially for major hurricanes (Category 3 and above).
+        </p>
+    </main>
+    <section>
+        <h3>Watch this Video for an Interactive View</h3>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0uJMj0j9cA4" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+        </div>
+    </section>
+    <footer>
+        <div class="resources">
+            <a href="https://www.nhc.noaa.gov" target="_blank">National Hurricane Center (NHC)</a>
+            <a href="https://www.fema.gov" target="_blank">FEMA - Disaster Preparedness</a>
+            <a href="https://www.redcross.org" target="_blank">American Red Cross</a>
+            <a href="https://www.globalgiving.org" target="_blank">GlobalGiving</a>
+        </div>
+        <span id="year"></span>
+        <p id="lastmodified"></p>
+        <p>Soure Video WKYC Channel 3</p>
+    </footer>
+
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/hamburger-menu.js" defer></script>
+    <script src="scripts/table.js"></script>
+</body>
+</html>

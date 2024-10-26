@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hurricane Season Notification Enrollment - WDD 131 - Dynamic Web Fundamentals - Dennis Almendarez</title>
+  <meta name="description" content="Enroll to get the lastest news in this hurricane season.">
+  <meta name="author" content="Dennis Almendarez">
+  <meta property="og:title" content="Enrollment">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/hurricane-earth-satellite-medium.webp">
+  <meta property="og:url" content="https://yourwebsite.com/enroll.html">
+  <link rel="icon" href="images/favicon2.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/hurricanes.css">
+  <link rel="stylesheet" href="styles/hurricanes-small.css">
+</head>
+<body class="enroll">
+
+  <main>
+    <div class="form-container">
+      <h2>Stay Safe This Hurricane Season!</h2>
+      <p>Sign up for timely updates and stay informed.</p>
+      <form action="thank-you.html" method="get">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+        <label>
+          <input type="checkbox" name="agree" required> I agree to receive hurricane notifications
+        </label>
+
+        <button type="submit" class="button">Enroll Now</button>
+      </form>
+      <p>We'll notify you of important updates during hurricane season. Stay safe!</p>
+    </div>
+  </main>
+</body>
+</html>

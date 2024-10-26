@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #4eb28f;
+    --secondary-color: #7FCDC2;
+    --accent1-color: #FEEBCA;
+    --accent2-color: #F07167;
+    --accent3-color: #FED9B7;
+    --heading-font: "Roboto", serif;
+    --paragraph-font: Tenor Sans, serif, Helvetica;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--accent1-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 1rem;
+}
+
+header .logo {
+    color: #000000;
+    font-size: 1.5rem;
+}
+
+nav {
+    justify-content: space-between;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+nav a:hover {
+    border-radius: 30px;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    color: #333;
+}
+
+nav ul {
+    display: none;
+}
+
+.intro img {
+    width: 100%;
+    height: 250px;
+}
+
+.content img {
+    max-width: 100%;
+    height: 250px;
+}
+
+.intro {
+    width: 80%;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--accent3-color);
+    margin: 0 auto;
+}
+
+h1 {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-family: var(--heading-font);
+    font-size: 1.3rem;
+}
+
+.content {
+    display: flex;
+    margin: 0 auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+.content p {
+    font-family: var(--paragraph-font);
+    font-size: 0.9rem;
+}
+
+.left-content, .right-content, .middle-content {
+    width: 48%;
+    background-color: white;
+    padding: 15px;
+}
+
+.button {
+    border-radius: 50px;
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.button a {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button a:hover {
+    color: #333;
+    background-color: var(--secondary-color);
+}
+
+.text p {
+    text-align: center;
+    font-family: var(--paragraph-font);
+    margin: 30px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+}
+
+.resources {
+    margin: 20px;
+}
+
+footer a {
+    color: #000000;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+/* catyegories */
+
+table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #dddddd;
+}
+
+th {
+    background-color: #0073e6;
+    color: white;
+    font-size: 1.2em;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(even) td {
+    background-color: #e6f2ff;
+}
+
+.text2 {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 500px;
+}
+
+.body2{
+    background-color: var(--secondary-color);
+}
+
+.video-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin: 20px 0; 
+}
+
+iframe {
+    max-width: 100%;
+}
+
+h3 {
+    text-align: center;
+}
+
+/* Prapare for hurricane */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.circle-box {
+    width: 250px;
+    height: 250px;
+    background-color: #009688;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.circle-box:hover {
+    transform: scale(1.05);
+}
+
+.circle-box h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.circle-box p {
+    font-size: 0.9em;
+}
+
+/* Past hurricanes */
+
+caption {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.hurricaneT {
+    padding-bottom: 16%;
+    padding-top: 10%;
+}
+
+/* form */
+
+.enroll {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f8ff;
+  }
+
+.form-container {
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+h2 {
+    text-align: center;
+  }
+  
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #333;
+  }
+  
+input[type="text"], input[type="email"], input[type="tel"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+.form-container .button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #0077b6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+.form-container .button:hover {
+    background-color: #005f87;
+  }
+  
+.form-container p {
+    text-align: center;
+    font-size: 0.9em;
+    color: #555;
+  }
+
+/* thanks */
+
+.thank-you {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f8ff;
+  }
+
+.thank-you-container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+.thank-you h1 {
+    font-size: 2em;
+  }
+
+.thank-you p {
+    color: #333;
+    font-size: 1.2em;
+  }
+
+.thank-you .button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0077b6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+.thank-you .button:hover {
+    background-color: #005f87;
+  }
